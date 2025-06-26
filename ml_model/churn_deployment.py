@@ -6,7 +6,12 @@ from PIL import Image
 print('Libraries Imported Successfully')
 
 # Load Model
-model = joblib.load('gb_model.pkl')
+import os
+model_path = os.path.join(os.path.dirname(__file__), 'gb_model.pkl')
+model = joblib.load(model_path)
+
+
+#model = joblib.load('gb_model.pkl')
 print('Model Loaded Successfully')
 
 # Set Stremlit Title and Header
