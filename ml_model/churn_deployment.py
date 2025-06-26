@@ -57,7 +57,6 @@ input_data = {
 } 
 print('Dictionary Created Successfully')
 
-
 # Convert the Dictionary to a Pandas DataFrame
 input_df = pd.DataFrame([input_data])
 print('DataFrame Created Successfully')
