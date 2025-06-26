@@ -41,7 +41,6 @@ overage_fee = st.number_input('Overage Fee', min_value=0.0, max_value=18.2, valu
 roam_mins = st.number_input('Roaming Minutes', min_value=0.0, max_value=20.0, value=5.0, step=0.1)
 print('Input Parameters Created Successfully')
 
-
 # Create a dictionary from the imput parameter
 input_data = {
 'AccountWeeks': account_weeks,
