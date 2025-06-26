@@ -16,18 +16,16 @@ st.image(image, use_column_width=True)
 st.write('This Application predicts whether a telecom customer is likely to churn based on some attributes')
 st.header('Kindly Provide the Following Information')
 with st.expander("Documentation: Input Feature Descriptions"):
-    st.markdown("""
-    - **Account Weeks**: Number of weeks the customer has had an account with the company.
-    - **Contract Renewal**: Whether the customer has recently renewed their contract (1 = Yes, 0 = No).
-    - **Data Plan**: Whether the customer has a mobile data plan (1 = Yes, 0 = No).
-    - **Data Usage**: Amount of mobile data used by the customer in GB.
-    - **Customer Service Calls**: Number of calls made by the customer to customer service.
-    - **Day Minutes**: Total number of minutes used during the day.
-    - **Day Calls**: Number of calls made during daytime hours.
-    - **Monthly Charge**: Monthly fee the customer pays.
-    - **Overage Fee**: Extra charges for exceeding plan limits.
-    - **Roaming Minutes**: Number of minutes spent on roaming.
-    """)
+    st.write("**Account Weeks**: Number of weeks the customer has had an account with the company.")
+    st.write("**Contract Renewal**: Whether the customer has recently renewed their contract (1 = Yes, 0 = No).")
+    st.write("**Data Plan**: Whether the customer has a mobile data plan (1 = Yes, 0 = No).")
+    st.write("**Data Usage**: Amount of mobile data used by the customer in GB.")
+    st.write("**Customer Service Calls**: Number of calls made by the customer to customer service.")
+    st.write("**Day Minutes**: Total number of minutes used during the day.")
+    st.write("**Day Calls**: Number of calls made during daytime hours.")
+    st.write("**Monthly Charge**: Monthly fee the customer pays.")
+    st.write("**Overage Fee**: Extra charges for exceeding plan limits.")
+    st.write("**Roaming Minutes**: Number of minutes spent on roaming.")
 print('Streamlit Title and Header Set Successfully')
 
 # Define Input Paramters
