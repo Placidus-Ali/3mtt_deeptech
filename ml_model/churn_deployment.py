@@ -6,36 +6,27 @@ from PIL import Image
 print('Libraries Imported Successfully')
 
 # Load Model
-import os
-model_path = os.path.join(os.path.dirname(__file__), 'gb_model.pkl')
-model = joblib.load(model_path)
-
-
-#model = joblib.load('gb_model.pkl')
+model = joblib.load('gb_model.pkl')
 print('Model Loaded Successfully')
 
 # Set Stremlit Title and Header
 st.title('Telecom Customer Churn Prediction')
-
-image_path = os.path.join(os.path.dirname(__file__), 'Telecoms.jpeg')
-image = Image.open(image_path)
-st.image(image, use_container_width=True)
-#image = Image.open('Telecoms.jpeg') 
-#st.image(image, use_column_width=True)
+image = Image.open('Telecoms.jpeg') 
+st.image(image, use_column_width=True)
 st.write('This Application predicts whether a telecom customer is likely to churn based on some attributes')
 st.header('Kindly Provide the Following Information')
 with st.expander("Documentation: Input Feature Descriptions"):
     st.markdown("""
-      **Account Weeks**: Number of weeks the customer has had an account with the company.
-      **Contract Renewal**: Whether the customer has recently renewed their contract (1 = Yes, 0 = No).
-      **Data Plan**: Whether the customer has a mobile data plan (1 = Yes, 0 = No).
-      **Data Usage**: Amount of mobile data used by the customer in GB.
-      **Customer Service Calls**: Number of calls made by the customer to customer service.
-      **Day Minutes**: Total number of minutes used during the day.
-      **Day Calls**: Number of calls made during daytime hours.
-      **Monthly Charge**: Monthly fee the customer pays.
-      **Overage Fee**: Extra charges for exceeding plan limits.
-      **Roaming Minutes**: Number of minutes spent on roaming.
+    - **Account Weeks**: Number of weeks the customer has had an account with the company.
+    - **Contract Renewal**: Whether the customer has recently renewed their contract (1 = Yes, 0 = No).
+    - **Data Plan**: Whether the customer has a mobile data plan (1 = Yes, 0 = No).
+    - **Data Usage**: Amount of mobile data used by the customer in GB.
+    - **Customer Service Calls**: Number of calls made by the customer to customer service.
+    - **Day Minutes**: Total number of minutes used during the day.
+    - **Day Calls**: Number of calls made during daytime hours.
+    - **Monthly Charge**: Monthly fee the customer pays.
+    - **Overage Fee**: Extra charges for exceeding plan limits.
+    - **Roaming Minutes**: Number of minutes spent on roaming.
     """)
 print('Streamlit Title and Header Set Successfully')
 
