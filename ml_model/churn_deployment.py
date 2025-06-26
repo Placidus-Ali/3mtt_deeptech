@@ -66,7 +66,7 @@ print('DataFrame Created Successfully')
 if st.button('Predict Churn'):
     try:
         prediction = model.predict(input_df)
-        st.subheader('prediction Result')
+        st.subheader('Prediction Result')
         if prediction[0] == 1:
             st.error(f'This Customer is likely to CHURN')
         else:
