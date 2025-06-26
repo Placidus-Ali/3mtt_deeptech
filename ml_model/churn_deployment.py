@@ -19,7 +19,7 @@ st.title('Telecom Customer Churn Prediction')
 
 image_path = os.path.join(os.path.dirname(__file__), 'Telecoms.jpeg')
 image = Image.open(image_path)
-st.image(image, use_column_width=True)
+st.image(image, use_container_width=True)
 #image = Image.open('Telecoms.jpeg') 
 #st.image(image, use_column_width=True)
 st.write('This Application predicts whether a telecom customer is likely to churn based on some attributes')
